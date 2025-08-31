@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="crud">
+        <div class="head">
+            <h2>CRUD</h2>
+            <p>Managment System</p>
+        </div>
+        <div class="inputs"></div>
+        <input type="text" placeholder="Title" id="title">
+        <div class="price">
+            <input onkeyup="calctotal()" type="number" placeholder="price" id="price">
+            <input onkeyup="calctotal()" type="number" placeholder="taxes" id="taxes">
+            <input onkeyup="calctotal()" type="number" placeholder="ads" id="ads">
+            <input onkeyup="calctotal()" type="number" placeholder="discount" id="discount">
+            <small id="total">0</small>
+        </div>
+        <input type="text" placeholder="count" id="count">
+        <input type="text" placeholder="category" id="category">
+        <button id="submit">Create</button>
+        <div class="outputs">
+            <div class="search">
+                <input type="text" id="search" placeholder="search">
+                <div class="btnsearch">
+                    
+                </div>
+                <div id="deleteAll">
+                    
+                </div>
+                <table>
+                    <tr>
+                        <th>id</th>
+                        <th>title</th>
+                        <th>price</th>
+                        <th>taxes</th>
+                        <th>ads</th>
+                        <th>discount</th>
+                        <th>total</th>
+                        <th>category</th>
+                        <th>update</th>
+                    </tr>
+                    <tbody id="tbody">
+
+                    </tbody>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
